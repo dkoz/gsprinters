@@ -1,4 +1,4 @@
-gsprinters
+Gemstone Printer - gsprinters
 ==========
 
 DarkRP Storing Gemstone Money Printers

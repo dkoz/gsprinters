@@ -1,9 +1,10 @@
 Gemstone Printers created by KoZ
-https://github.com/dkoz/gsprinters/
+Steam: http://steamcommunity.com/id/drunkenkoz
+Github: https://github.com/dkoz/gsprinters/
 
 How to install:
 
-1) Place contents of gsprinters-master.zip into your addons folder.
+1) Place the contents of the gsprinters-master.zip into your addons folder.
 
 2) Open your addentities.lua and place the following code into the bottom of the file;
 
@@ -47,7 +48,7 @@ AddEntity("Sapphire Printer", {
         cmd = "/buysapphire"
 })
 
-3) Open your config.lua and add the following code to the bottom of the file;
+3) Open your config.lua and place the following code into the bottom of the file;
 
 GM.Config.topazprintamount                              = 10
 GM.Config.amethystprintamount                   = 15
