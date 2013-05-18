@@ -79,7 +79,7 @@ function ENT:CreateMoneybag()
 	if amount == 0 then
 		amount = 10
 	end
-	if math.random(1, 300) == 3 then self:BurstIntoFlames() end
+	if math.random(1, 1000) == 3 then self:BurstIntoFlames() end
 	local amount = self:GetNWInt("PrintA") + Y
 	self:SetNWInt("PrintA",amount)
 	self.sparking = false
