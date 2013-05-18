@@ -1,0 +1,56 @@
+Gemstone Printers created by KoZ
+https://github.com/dkoz/gsprinters/
+
+How to install:
+
+1) Place contents of gsprinters-master.zip into your addons folder.
+
+2) Open your addentities.lua and place the following code into the bottom of the file;
+
+AddEntity("Topaz Printer", {
+        ent = "topaz_money_printer",
+        model = "models/props_c17/consolebox01a.mdl",
+        price = 1000,
+        max = 2,
+        cmd = "/buytopaz"
+})
+ 
+AddEntity("Amethyst Printer", {
+        ent = "amethyst_money_printer",
+        model = "models/props_c17/consolebox01a.mdl",
+        price = 1500,
+        max = 2,
+        cmd = "/buyamethyst"
+})
+ 
+AddEntity("Emerald Printer", {
+        ent = "emerald_money_printer",
+        model = "models/props_c17/consolebox01a.mdl",
+        price = 2500,
+        max = 2,
+        cmd = "/buyemerald"
+})
+ 
+AddEntity("Ruby Printer", {
+        ent = "ruby_money_printer",
+        model = "models/props_c17/consolebox01a.mdl",
+        price = 5000,
+        max = 2,
+        cmd = "/buyruby"
+})
+ 
+AddEntity("Sapphire Printer", {
+        ent = "sapphire_money_printer",
+        model = "models/props_c17/consolebox01a.mdl",
+        price = 7500,
+        max = 2,
+        cmd = "/buysapphire"
+})
+
+3) Open your config.lua and add the following code to the bottom of the file;
+
+GM.Config.topazprintamount                              = 10
+GM.Config.amethystprintamount                   = 15
+GM.Config.emeraldprintamount                    = 25
+GM.Config.rubyprintamount                               = 50
+GM.Config.sapphireprintamount                   = 75
