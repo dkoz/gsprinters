@@ -4,7 +4,7 @@ function ENT:Initialize()
 end
 
 function ENT:Draw()
-	self.Entity:DrawModel()
+	self:DrawModel()
 	
 	local Pos = self:GetPos()
 	local Ang = self:GetAngles()
