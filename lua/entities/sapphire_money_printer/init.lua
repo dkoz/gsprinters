@@ -21,6 +21,10 @@ function ENT:Initialize()
 	self.IsMoneyPrinter = true
 	timer.Simple(1.0, function() PrintMore(self) end)
 	self:SetNWInt("PrintA",0)
+	
+	self.sound = CreateSound(self, Sound("ambient/levels/labs/equipment_printer_loop1.wav"))
+	self.sound:SetSoundLevel(52)
+	self.sound:PlayEx(1, 100)
 end
 
 function ENT:OnTakeDamage(dmg)
@@ -93,5 +97,11 @@ function ENT:Use(activator)
 	activator:AddMoney(self:GetNWInt("PrintA"));
 	GAMEMODE:Notify(activator, 1, 4, "You have collected $"..self:GetNWInt("PrintA").." from a Sapphire Printer.")
 	self:SetNWInt("PrintA",0)
+	end
+end
+
+function ENT:OnRemove()
+	if self.sound then
+		self.sound:Stop()
 	end
 end
