@@ -6,6 +6,8 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 
+ENT.SeizeReward = 950
+
 local PrintMore
 function ENT:Initialize()
 	self:SetModel("models/props_c17/consolebox01a.mdl")
