@@ -10,11 +10,13 @@ ENT.SeizeReward = 950
 
 local PrintMore
 function ENT:Initialize()
+	local tcolor = gemstone.topazcolor
+
 	self:SetModel("models/props_c17/consolebox01a.mdl")
 	self:PhysicsInit(SOLID_VPHYSICS)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
-	self:SetColor(Color(242, 207, 107, 255))
+	self:SetColor( tcolor )
 	local phys = self:GetPhysicsObject()
 	if phys:IsValid() then phys:Wake() end
 	self.damage = 100
@@ -81,15 +83,13 @@ function ENT:CreateMoneybag()
 	if not IsValid(self) then return end
 	if self:IsOnFire() then return end
 	local MoneyPos = self:GetPos()
-	local Y = GAMEMODE.Config.topazprintamount
-	if amount == 0 then
-		amount = 10
-	end
+	local printamount = gemstone.topazprintamount
+	local printtime = gemstone.topazprinttime
 	if math.random(1, 1000) == 3 then self:BurstIntoFlames() end
-	local amount = self:GetNWInt("PrintA") + Y
+	local amount = self:GetNWInt("PrintA") + printamount
 	self:SetNWInt("PrintA",amount)
 	self.sparking = false
-	timer.Simple(math.random(10, 15), function() PrintMore(self) end)
+	timer.Simple(printtime, function() PrintMore(self) end)
 end
 
 function ENT:Use(activator)

@@ -12,7 +12,7 @@ function ENT:Draw()
     local owner = self:Getowning_ent()
 	owner = (IsValid(owner) and owner:Nick()) or "unknown"
 	
-	txt1 = "Sapphire Printer"
+	local txt1 = gemstone.sapphirename
 	txt2 = "$" ..self:GetNWInt("PrintA")
 	
 	surface.SetFont("HUDNumber5")
