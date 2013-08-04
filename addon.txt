@@ -2,7 +2,7 @@
 {
 	"name"				"gsprinters"
 	"version"			"1.7"
-	"author_name"			"KoZ"
+	"author_name"			"KoZ and TCWilliamson"
 	"author_emai"			""
 	"author_url"			"https://github.com/dkoz/gsprinters"
 	"info"				"DarkRP Gemstone Money Printers"

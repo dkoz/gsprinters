@@ -2,6 +2,9 @@ Gemstone Printers created by KoZ
 Steam: http://steamcommunity.com/id/drunkenkoz
 Github: https://github.com/dkoz/gsprinters/
 
+Credits:
+TCWilliamson - Creating the original storing money printers
+
 How to install:
 
 1) Place the contents of the gsprinters-master.zip into your addons folder.
