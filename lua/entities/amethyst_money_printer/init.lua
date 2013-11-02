@@ -89,13 +89,13 @@ function ENT:CreateMoneybag()
 	local amount = self:GetNWInt("PrintA") + printamount
 	self:SetNWInt("PrintA",amount)
 	self.sparking = false
-	timer.Simple(math.random(10, 15), function() PrintMore(self) end)
+	timer.Simple(printtime, function() PrintMore(self) end)
 end
 
 function ENT:Use(activator)
 	if(activator:IsPlayer()) and self:GetNWInt("PrintA") >= 1 then
-	activator:AddMoney(self:GetNWInt("PrintA"));
-	GAMEMODE:Notify(activator, 1, 4, "You have collected $"..self:GetNWInt("PrintA").." from a Amethyst Printer.")
+	activator:addMoney(self:GetNWInt("PrintA"));
+	DarkRP.notify(activator, 1, 4, "You have collected $"..self:GetNWInt("PrintA").." from a Amethyst Printer.")
 	self:SetNWInt("PrintA",0)
 	end
 end

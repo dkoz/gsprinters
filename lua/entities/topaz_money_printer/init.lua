@@ -94,8 +94,8 @@ end
 
 function ENT:Use(activator)
 	if(activator:IsPlayer()) and self:GetNWInt("PrintA") >= 1 then
-	activator:AddMoney(self:GetNWInt("PrintA"));
-	GAMEMODE:Notify(activator, 1, 4, "You have collected $"..self:GetNWInt("PrintA").." from a Topaz Printer.")
+	activator:addMoney(self:GetNWInt("PrintA"));
+	DarkRP.notify(activator, 1, 4, "You have collected $"..self:GetNWInt("PrintA").." from a Topaz Printer.")
 	self:SetNWInt("PrintA",0)
 	end
 end
