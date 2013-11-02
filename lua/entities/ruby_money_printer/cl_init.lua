@@ -10,7 +10,7 @@ function ENT:Draw()
 	local Ang = self:GetAngles()
 	
     local owner = self:Getowning_ent()
-	owner = (IsValid(owner) and owner:Nick()) or "unknown"
+	owner = (IsValid(owner) and owner:Nick()) or DarkRP.getPhrase("unknown")
 	
 	local txt1 = gemstone.rubyname
 	txt2 = "$" ..self:GetNWInt("PrintA")
