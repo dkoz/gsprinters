@@ -67,7 +67,12 @@ function ENT:Fireball()
 	local dist = math.random(5, 50) -- Explosion radius
 	self:Destruct()
 	for k, v in pairs(ents.FindInSphere(self:GetPos(), dist)) do
-		if not v:IsPlayer() and not v.IsMoneyPrinter then v:Ignite(math.random(5, 22), 0) end
+		if not v:IsPlayer() and not v:IsWeapon() and v:GetClass() ~= "predicted_viewmodel" and not v.IsMoneyPrinter then
+			v:Ignite(math.random(5, 22), 0)
+		elseif v:IsPlayer() then
+			local distance = v:GetPos():Distance(self:GetPos())
+			v:TakeDamage(distance / dist * 100, self, self)
+		end
 	end
 	self:Remove()
 end
