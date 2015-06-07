@@ -17,7 +17,7 @@ function ENT:Draw()
     local owner = self:Getowning_ent()
 	owner = (IsValid(owner) and owner:Nick()) or DarkRP.getPhrase("unknown")
 	
-	local txt1 = gemstone.emeraldname
+	local txt1 = gemstone.config.emeraldname
 	txt2 = "$" ..self:GetNWInt("PrintA")
 	
 	surface.SetFont("HUDNumber5")

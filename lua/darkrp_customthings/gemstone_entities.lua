@@ -5,7 +5,7 @@
 
 AddCSLuaFile()
 
-if (gemstone.entityenable) then
+if (gemstone.config.entityenable) then
 	DarkRP.createEntity("Topaz Printer", {
 			ent = "topaz_money_printer",
 			model = "models/props_c17/consolebox01a.mdl",
