@@ -1,54 +1,11 @@
 Gemstone Printers created by KoZ
-Steam: http://steamcommunity.com/id/drunkenkoz
+Steam: http://steamcommunity.com/profiles/76561197989811664
 Github: https://github.com/dkoz/gsprinters/
-
-Credits:
-TCWilliamson - Creating the original storing money printers
 
 How to install:
 
 1) Place the contents of the gsprinters-master.zip into your addons folder.
 
-2) Open your addentities.lua and place the following code into the bottom of the file;
+2) Customize the printers by editing the gemstone_settings.lua located in lua/darkrp_config folder.
 
-AddEntity("Topaz Printer", {
-        ent = "topaz_money_printer",
-        model = "models/props_c17/consolebox01a.mdl",
-        price = 1000,
-        max = 2,
-        cmd = "/buytopaz"
-})
- 
-AddEntity("Amethyst Printer", {
-        ent = "amethyst_money_printer",
-        model = "models/props_c17/consolebox01a.mdl",
-        price = 1500,
-        max = 2,
-        cmd = "/buyamethyst"
-})
- 
-AddEntity("Emerald Printer", {
-        ent = "emerald_money_printer",
-        model = "models/props_c17/consolebox01a.mdl",
-        price = 2500,
-        max = 2,
-        cmd = "/buyemerald"
-})
- 
-AddEntity("Ruby Printer", {
-        ent = "ruby_money_printer",
-        model = "models/props_c17/consolebox01a.mdl",
-        price = 5000,
-        max = 2,
-        cmd = "/buyruby"
-})
- 
-AddEntity("Sapphire Printer", {
-        ent = "sapphire_money_printer",
-        model = "models/props_c17/consolebox01a.mdl",
-        price = 7500,
-        max = 2,
-        cmd = "/buysapphire"
-})
-
-3) Customize the printers by editing the gemstone_config.lua located in lua/autorun folder.
+3) Customize prices and menu settings by editing the gemstone_entities.lua location in lua/darkrp_customthings folder.

@@ -1,6 +1,15 @@
+--[[
+	DarkRP Gemstone Printers - https://github.com/dkoz/gsprinters
+	Created by Koz - http://steamcommunity.com/profiles/76561197989811664
+--]]
+
+AddCSLuaFile()
 gemstone = {} -- Do not edit this line
 
 -- Gemstone Configuration
+
+-- General Settings
+gemstone.entityenable				= true
 
 -- Topaz Printer Settings
 gemstone.topazname					= "Topaz Printer"

@@ -1,7 +1,8 @@
 --[[
-Gemstone Printer created by KoZ
-https://github.com/dkoz/gsprinters
-]]--
+	DarkRP Gemstone Printers - https://github.com/dkoz/gsprinters
+	Created by Koz - http://steamcommunity.com/profiles/76561197989811664
+--]]
+
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
