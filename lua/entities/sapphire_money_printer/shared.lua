@@ -6,7 +6,7 @@
 ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.PrintName = "Sapphire Printer"
-ENT.Author = "KoZ & TCWilliamson"
+ENT.Author = "KoZ"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
