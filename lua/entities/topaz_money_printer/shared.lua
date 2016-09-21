@@ -1,7 +1,12 @@
+--[[
+	DarkRP Gemstone Printers - https://github.com/dkoz/gsprinters
+	Created by Koz - http://steamcommunity.com/profiles/76561197989811664
+--]]
+
 ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 ENT.PrintName = "Topaz Printer"
-ENT.Author = "KoZ & TCWilliamson"
+ENT.Author = "KoZ"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
