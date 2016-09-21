@@ -39,5 +39,5 @@ gemstone.config.rubyprinttime				= 10
 -- Sapphire Printer Settings
 gemstone.config.sapphirename				= "Sapphire Printer"
 gemstone.config.sapphirecolor				= Color( 15, 82, 186, 255 )
-gemstone.config.sapphireprintamount		= 75
-gemstone.config.sapphireprinttime			= 10
+gemstone.config.sapphireprintamount		= 1000
+gemstone.config.sapphireprinttime			= 2
