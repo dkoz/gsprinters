@@ -91,7 +91,9 @@ function ENT:CreateMoneybag()
 	local MoneyPos = self:GetPos()
 	local printamount = gemstone.config.emeraldprintamount
 	local printtime = gemstone.config.emeraldprinttime
-	if math.random(1, 1000) == 3 then self:BurstIntoFlames() end
+	if gemstone.config.enableExplosion == true then
+		if math.random(1, 1000) == 3 then self:BurstIntoFlames() end
+	end
 	local amount = self:GetNWInt("PrintA") + printamount
 	self:SetNWInt("PrintA",amount)
 	self.sparking = false

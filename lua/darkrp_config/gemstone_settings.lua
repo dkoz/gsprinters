@@ -11,6 +11,7 @@ gemstone.config = {} -- Do not edit this line.
 
 -- General Settings
 gemstone.config.entityenable				= true
+gemstone.config.enableExplosion				= true
 
 -- Topaz Printer Settings
 gemstone.config.topazname					= "Topaz Printer"
