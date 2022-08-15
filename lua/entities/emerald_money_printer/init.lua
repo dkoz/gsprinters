@@ -81,7 +81,7 @@ end
 PrintMore = function(ent)
 	if IsValid(ent) then
 		ent.sparking = true
-		timer.Simple(1.0, function() ent:CreateMoneybag() end)
+		timer.Simple(1.0, function() if IsValid(ent) then ent:CreateMoneybag() end end)
 	end
 end
 
